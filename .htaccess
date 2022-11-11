@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/css/
+RewriteCond %{REQUEST_URI} !^/fonts/
+RewriteCond %{REQUEST_URI} !^/img/
+
+RewriteRule .+ index.php
+
+AddDefaultCharset utf-8

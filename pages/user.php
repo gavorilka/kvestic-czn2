@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Профиль</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="page-header">
-        <img src="img/logo.svg" alt="Kvestik" height="30">
-        <nav class="page-nav">
-            <ul>
-                <li><a href="index.html">Домашняя</a></li>
-                <li><a href="user.html">Профиль</a></li>
-                <li><a href="add.html">Создать</a></li>
-            </ul>
-        </nav>
-        <form name="authorization" class="header__form">
-            <button class="form-button">Выйти</button>
-        </form>
-       
-    </header>
-    <main class="main">
+        <?php if(isset($_SESSION["user"]) && $_SESSION["user"]->status == 1): ?>
         <section class="article-container">
             <form class="post">
                 <h3>Администрирование</h3>
@@ -38,6 +15,7 @@
                 <button class="form-button primary">Изменить</button>
             </form>
         </section>
+        <?php endif; ?>
         <section class="article-container">
             <article class="post">
                 <div>
@@ -56,9 +34,3 @@
                 <p class="post__annotation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid architecto aspernatur delectus deserunt eaque eos in maxime neque perspiciatis quas quia quidem quis, quos, reiciendis sunt tempore tenetur. Numquam?</p>
             </article>
         </section>
-    </main>
-    <aside class="attention">
-        <p>Attention text</p>
-    </aside>
-</body>
-</html>

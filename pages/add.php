@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Добавить пост</title>
-    <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
         figure {
             max-width: 280px;
         }
     </style>
-</head>
-<body>
-    <header class="page-header">
-        <img src="img/logo.svg" alt="Kvestik" height="30">
-        <nav class="page-nav">
-            <ul>
-                <li><a href="index.html">Домашняя</a></li>
-                <li><a href="user.html">Профиль</a></li>
-            </ul>
-        </nav>
-        <form name="authorization" class="header__form">
-            <button class="form-button">Выйти</button>
-        </form>
-    </header>
-    <main class="main">
         <section class="article-container">
             <article class="post">
                 <form class="post__heading">
@@ -53,9 +31,3 @@
                 </form>
             </article>
         </section>
-    </main>
-    <aside class="attention">
-        <p>Attention text</p>
-    </aside>
-</body>
-</html>

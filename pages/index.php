@@ -1,29 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашняя</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="page-header">
-        <img src="img/logo.svg" alt="Kvestik" height="30">
-        <nav class="page-nav">
-            <ul>
-                <li><a href="index.html">Домашняя</a></li>
-                <li><a href="user.html">Профиль</a></li>
-            </ul>
-        </nav>
-        <form name="authorization" class="header__form">
-            <input class="form-input" placeholder="логин" name="login" type="text">
-            <input class="form-input" placeholder="пароль" name="login" type="password">
-            <button class="form-button primary" name="comeIn">Войти</button>
-            <button class="form-button" name="register">Присоединиться</button>
-            <button class="form-button" name="logout">Выйти</button>
-        </form>
-    </header>
-    <main class="main">
         <section class="article-container">
             <a href="single.html">
                 <article class="post">    
@@ -69,9 +43,4 @@
             <p class="pagination__page-number">1</p>
             <button class="pagination__button">&RightTeeArrow;</button>
         </form>
-    </main>
-    <aside class="attention">
-        <p>Attention text</p>
-    </aside>
-</body>
-</html>
+
